@@ -1,0 +1,292 @@
+/***** BASE STYLES*****/
+
+#laptop {
+    height: 890px;
+}
+
+#about {
+    height: 750px;
+}
+
+#portfolio1  {
+    height: 100px;
+}
+
+#portfolio2, #portfolio3, #portfolio4, #portfolio5 {
+    width: 100%;
+    max-width: 1900px;
+    height: 500px;
+    margin-right: 0px;
+}
+
+#contact {
+    height: 300px;
+}
+
+
+/***** GRID ******/
+
+.full-width {
+    width: 100%;
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+.half-width {
+    width: 100%;
+    max-width: 950px;
+    float: left;
+}
+
+.third-width {
+    width: 100%;
+    max-width: 630px;
+    float: left;  
+}
+
+
+/***Header***/
+
+header h1 {
+    font-size: 40px;
+    color: white;
+    padding-left: 20px;
+    font-family: 'Balthazar', serif;
+    text-shadow: 2px 2px #fa0075;
+}
+
+nav {
+    position: fixed;
+    text-align: right;
+    margin: 15px 0 0 0;
+    float: right;
+    padding-right: 10px;
+}    
+
+nav ul {
+    width: 950px;
+    margin: 0;
+    padding: 5px 0 0 0px;
+}
+
+nav ul li {
+    font-size: 45px;
+    display: inline-block;
+    padding: 0 20px 0 0px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px #fa0075;
+    font-family: 'Balthazar', serif;
+    font-weight: bold;
+}
+
+/***Laptop Pic***/
+
+.laptop {
+    padding-top: 90px;
+    background: url('../img/hero-background.png');
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.laptop h2 {
+    font-size: 130px;
+    color: white;
+    margin: 0 0 0 130px;
+    padding-top: 470px;
+    font-family: 'Fenix', serif;
+}
+
+.laptop span {
+    color: #fa0075;
+}
+
+/***Portfolio 1***/
+
+#portfolio1 h2 {
+    font-size: 46px;
+    text-align: center;
+    color: #fa0075;
+    padding-top: 25px;
+    font-family: 'Balthazar', serif;
+}
+
+
+#portfolio2 {
+    text-align: center;
+}
+
+#portfolio2 h2 {
+    font-family: 'Fenix', serif;
+    font-size: 30px;
+}
+
+#portfolio2 p {
+    font-family: 'Fenix', serif;
+    font-size: 20px;
+}
+
+#portfolio2 img {
+    display: inline-block;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+
+#portfolio3 {
+    text-align: center;
+}
+
+#portfolio3 h2 {
+    font-family: 'Fenix', serif;
+    font-size: 30px;
+}
+
+#portfolio3 img {
+    display: inline-block;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+#portfolio3 p {
+    font-family: 'Fenix', serif;
+    font-size: 20px;
+}
+
+#portfolio4 {
+    text-align: center;
+}
+
+#portfolio4 h2 {
+    font-family: 'Fenix', serif;
+    font-size: 30px;
+}
+
+#portfolio4 p {
+    font-family: 'Fenix', serif;
+    font-size: 20px;
+}
+
+#portfolio5 {
+    text-align: center;
+}
+
+#portfolio5 h2 {
+    font-family: 'Fenix', serif;
+    font-size: 30px;
+}
+
+#portfolio5 p {
+    font-family: 'Fenix', serif;
+    font-size: 20px;
+}
+
+/***About***/
+#about {
+    background: url('../img/about-me.png');
+    background-size: cover;
+    margin: 0;
+}
+
+#about h2 {
+    text-align: center;
+    color: #fa0075;
+    margin: 0;
+    padding-top: 25px;
+    font-size: 46px;
+    font-family: 'Balthazar', serif;
+}
+
+#about h3 {
+    font-size: 40px;
+    padding-left: 75px;
+    font-family: 'Fenix', serif;
+}
+
+#about p {
+    font-size: 35px;
+    padding-left: 75px;
+    font-family: 'Fenix', serif;
+}
+
+/**Contact**/
+
+#contact {
+    margin: 0;
+    background-color: black;
+}
+
+#contact h3 {
+    text-align: center;
+    color: #fa0075;
+    margin: 0 ;
+    padding-top: 20px;
+    font-family: 'Balthazar', serif;
+    font-size: 30px;
+}
+
+#contact ul li {
+     display: inline-block;
+}
+#contact ul img {
+    font-size: 32px;
+    padding-left: 105px;
+    padding-top: 15px;
+}
+
+#contact h2 {
+    font-size: 46px;
+    text-align: center;
+    color: #fa0075;
+    margin: 0 ;
+    padding-top: 35px;
+    font-family: 'Balthazar', serif;
+}
+
+#contact .third-width {
+    color: white;
+}
+
+#hire-invite {
+    padding-left: 190px;
+}
+
+#email-header {
+    text-decoration: none;
+    padding-left: 185px;
+}
+
+#socialmedia-header {
+    padding-left: 15px;
+}
+
+#invitation {
+    padding-left: 90px
+}
+
+footer {
+    background: black;
+}
+
+footer h5 {
+    color: #fa0075;
+    text-align: center;
+}
+
+footer ul {
+    margin: 0 auto;
+}
+
+footer ul a {
+    color: #fa0075;
+    text-decoration: none;
+}
+
+
+
