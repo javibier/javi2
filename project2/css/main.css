@@ -1,10 +1,16 @@
+/***Header***/
 header {
     background-color: white;
-  
 }
 
 header ul {
     margin: 0 auto;
+}
+
+header nav ul a {
+    color: #77a466;
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
 }
 
 .containers {
