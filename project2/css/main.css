@@ -1,127 +1,78 @@
-/**Head**/
-head {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: bolder;
+body {
+    background-color: black;
 }
 
-/**Header**/
-
-header h1 {
-	font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase;
-    font-size: 30px;
+.containers {
+    font-size: 36px;
+    text-align: center;
 }
 
-header h1 span {
-    color: #77a466;
-}
-
-nav {
-    float: right;
-    padding: 15px 0;
-}
-
-nav ul li{
-    display: inline-block;
-}
-
-nav ul li a {
-    text-transform: uppercase;
-    text-decoration: none;
+#div-1 {
+    font-size: 46px;
+    background: darkseagreen;
     font-family: 'Montserrat', sans-serif;
-	font-weight: bolder;
-    font-size: 12px;
-    color: #77a466;
-    padding-left: 32px; 
+    overflow: hidden;
 }
 
-/**Image**/
-#image {
-	border: 3px solid #77a466;
+#div-2 {
+    background: darkkhaki;
+    float: right;
+    font-family: 'Beth Ellen', cursive;
+    overflow: hidden;
+    height: 178px;
 }
 
-/***GRID***/
-.full-width {
-    width: 1200px;
-    margin: 0 auto;
+#div-3 {
+    background: magenta;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    overflow: hidden;
 }
 
-.half-width {
-    width: 600px;
-    float: left;
+#div-4 {
+    background: cyan;
+    float: right;
+    font-family: 'Lobster', cursive;
+    height: 198px;
 }
 
-.third-width {
-    width: 398px;
-    float: left;
-    
+#div-5 {
+    background: gold;
+    font-family: 'Pacifico', cursive;
+    overflow: hidden;
 }
 
-/***Intro Section***/
+#div-6 {
+    background: burlywood;
+    float: right;
+    font-family: 'Dancing Script', cursive;
+    height: 129px;
+} 
 
-#intro h2 {
-	text-transform: uppercase;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 17px;
-	color: #77a466;
+#div-7 {
+    background: coral;
+    font-family: 'Shadows Into Light', cursive;
+    overflow: hidden;
 }
 
-#intro p {
-	font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    line-height: 25px;
+#div-8 {
+    background: lawngreen;
+    float : right;
+    font-family: 'Lacquer', sans-serif;
+    overflow: hidden;
 }
 
-/***portfolio***/
-
-#portfolio {
-	height: 183px;
-	border-top: 1px solid #dedbdc;
-	border-bottom: 1px solid #dedbdc;
+#div-9 {
+    background: palegoldenrod;
+    font-family: 'Blinker', sans-serif;
+    height: 170px;
 }
-
-#portfolio h3 {
-	font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
-    padding: 7px 0 0 25px;
-}
-
-#portfolio p {
-	text-align: left;
-    font-size: 17px;
-    padding: 0 60px 0 25px;
-}
-
-#portfolio #specials p {
-	font-size: 15px;
-	color: #77a466;
-	line-height: 30px;
-}
-
-#portfolio #review {
-	margin-bottom: 0;
-	border-left: 1px solid #dedbdc;
-	border-right: 1px solid #dedbdc;
-}
-
-/**Footer**/
 
 footer {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: bolder;
-	text-align: center;
-	font-weight: bolder;
-	padding: 25px;
+    color: #fa0075;
+    text-align: center;
 }
 
-footer span {
-    color: #77a466;
-    font-family: 'Pinyon Script', cursive;
-}
-
-footer ul a {
-	float: right;
-    color: #77a466;
-    font-family: 'Gochi Hand', cursive;
+footer a {
     text-decoration: none;
 }
