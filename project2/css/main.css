@@ -69,11 +69,16 @@ body {
 }
 
 footer {
-    color: white;
+    background-color: white;
     text-align: center;
-    text-decoration: none;
+}
+
+footer ul {
+    margin: 0 auto;
 }
 
 footer ul a {
+    color: #77a466;
+    font-family: 'Pacifico', cursive;
     text-decoration: none;
 }
