@@ -137,7 +137,6 @@ nav ul li a {
     border-width: 1px;
 }
 
-
 #portfolio3 {
     text-align: center;
 }
@@ -173,6 +172,12 @@ nav ul li a {
     font-size: 20px;
 }
 
+#portfolio4 img {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
 #portfolio5 {
     text-align: center;
 }
@@ -186,6 +191,7 @@ nav ul li a {
     font-family: 'Fenix', serif;
     font-size: 20px;
 }
+
 
 /***About***/
 #about {
