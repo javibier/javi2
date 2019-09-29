@@ -126,6 +126,11 @@ footer #jeche ul a {
     text-decoration: none;
 }
 
+footer #jedev ul {
+	float: left;
+	padding-left: 0;
+}
+
 footer #jedev ul a {
 	float; left;
 	color: #77a466;
