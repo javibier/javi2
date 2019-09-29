@@ -27,21 +27,21 @@
 /***** GRID ******/
 
 .full-width {
-    width: 100%;
-    max-width: 1900px;
     margin: 0 auto;
+    max-width: 1900px;
+    width: 100%;
 }
 
 .half-width {
-    width: 100%;
-    max-width: 950px;
     float: left;
+    max-width: 950px;
+    width: 100%;
 }
 
 .third-width {
-    width: 100%;
+    float: left;
     max-width: 630px;
-    float: left;  
+    width: 100%;
 }
 
 
