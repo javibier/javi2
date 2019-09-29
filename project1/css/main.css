@@ -119,6 +119,10 @@ footer span {
     font-family: 'Pinyon Script', cursive;
 }
 
+footer ul {
+	margin-top: 32px;
+}
+
 footer #jeche ul a {
 	float: right;
     color: #77a466;
@@ -129,6 +133,7 @@ footer #jeche ul a {
 footer #jedev ul {
 	float: left;
 	padding-left: 0;
+	margin-top: 32px;
 }
 
 footer #jedev ul a {
@@ -136,4 +141,5 @@ footer #jedev ul a {
 	color: #77a466;
     font-family: 'Gochi Hand', cursive;
     text-decoration: none;
+    
 }
