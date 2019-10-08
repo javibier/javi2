@@ -313,13 +313,13 @@ label[data-function*='swipe'] {
   height: 42px;
   font: 42px fontawesome;
   text-align: center;
-  color: #333;
+  color: white;
   cursor: pointer;
   transform: translate3d(0, 0, 0);
   transition: transform .3s;
 }
 label[data-function*='swipe']:hover {
-  color: #263249;
+  color: #fa0075;
 }
 input[data-function*='swipe']:checked ~ label[data-function*='swipe'] {
   transform: translate3d(280px, 0, 0);
