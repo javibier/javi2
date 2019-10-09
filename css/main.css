@@ -295,90 +295,125 @@ footer ul a {
 }
 
 /* Hambuerger Menu*/
-.container {
-  display: flex;
-  min-height: 100%;
+
+li, a {
+    margin: 75px 0 -55px 0;
+    color: #03A9F4;
+    font: 14pt "Roboto", sans-serif;
+    font-weight: 700;
+    line-height: 1.8;
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+    outline: 0;
+    display: none;
 }
-input[data-function*='swipe'] {
-  position: absolute;
-  opacity: 0;
+li {
+    width: 230px;
+    text-indent: 56px;}
+a:focus {
+    display: block;
+    color: #333;
+    background-color: #eee;
+    transition: all .5s;
 }
-label[data-function*='swipe'] {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  z-index: 1;
-  display: block;
-  width: 42px;
-  height: 42px;
-  font: 42px fontawesome;
-  text-align: center;
-  color: white;
-  cursor: pointer;
-  transform: translate3d(0, 0, 0);
-  transition: transform .3s;
+aside {
+    position: absolute;
+    color: white;
+    top: 35%;
+    right: 10%;
+    text-align: right;
 }
-label[data-function*='swipe']:hover {
-  color: #fa0075;
+h1 {
+    line-height: 0;
+    font-size: 4vw;
+    font-weight: 700;
 }
-input[data-function*='swipe']:checked ~ label[data-function*='swipe'] {
-  transform: translate3d(280px, 0, 0);
+h3 {
+    float: right;
+    line-height: .3;
+    font-size: 2.5vw;
+    font-weight: lighter;
 }
-label[data-function*='swipe']:checked {
-  display: block;
+h4 {
+    float: left;
+    margin-left: -2%;
+    font-size: 1.5vw;
+    font-weight: lighter;
 }
-label:nth-child(2){
-  display: none;
+
+/*html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #03A9F4;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}*/
+
+#trigger, #burger, #burger:before, #burger:after {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background: #03A9F4;
+    width: 30px;
+    height: 5px;
+    transition: .2s ease;
+    cursor: pointer;
+    z-index: 1;
 }
-input[data-function*='swipe']:checked ~ label:nth-child(2){
-  display: block;
-  transform: translate3d(280px, 0px, 0px);
+#trigger {
+    height: 25px;
+    background: none;
 }
-input[data-function*='swipe']:checked ~ label:nth-child(3){
-  display: none;
+#burger:before {
+    content: " ";
+    top: 10px;
+    left: 0;
 }
-.headings {
-  flex: 1;
-  padding: 80px 30px;
-  background: #eee;
-  box-shadow: 0 0 5px black;
-  transform: translate3d(0, 0, 0);
-  transition: transform .3s;
+#burger:after {
+    content: " ";
+    top: 20px;
+    left: 0;
 }
-input[data-function*='swipe']:checked ~ .headings {
-  transform: translate3d(280px, 0px, 0px);
+#menu-toggle:checked + #trigger + #burger {
+    top: 35px;
+    transform: rotate(180deg);
+    transition: transform .2s ease;
 }
-input[data-function*='swipe']:checked ~ .sidebar {
-  transform: translate3d(0px, 0px, 0px);
+
+#menu-toggle:checked + #trigger + #burger:before {
+    width: 20px;
+    top: -2px;
+    left: 18px;
+    transform: rotate(45deg) translateX(-5px);
+    transition: transform .2s ease;
 }
-input[data-function*='swipe']:checked ~ .sidebar .menu li {
-  width: 100%;
+#menu-toggle:checked + #trigger + #burger:after {
+    width: 20px;
+    top: 2px;
+    left: 18px;
+    transform: rotate(-45deg) translateX(-5px);
+    transition: transform .2s ease;
 }
-.sidebar {
-  transform: translate3d(-280px, 0px, 0px);
-  position: absolute;
-  width: 280px;
-  background: #263249;
-  color: #eee;
-  left: 0;
-  height: 100%;
-  transition: all .3s;
+#menu {
+    position: absolute;
+    margin: 0; padding: 0;
+    width: 110px;
+    height: 110px;
+    background-color: #fff;
+    border-bottom-right-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    animation: not-checked-anim .2s both;
+    transition: .2s;
 }
-.menu li {
-  padding: 10px;
-  list-style: none;
-  width: 0%;
+#menu-toggle:checked + #trigger + #burger + #menu {
+    animation: checked-anim 1s ease both;
 }
-.menu li a {
-  color: #fff;
-  border: 3px solid #fff;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 900;
-  display: block;
-  text-decoration: none;
-  padding: 5px 0px 5px 0;
-  margin: 0 20px;
+#menu-toggle:checked + #trigger ~ #menu > li, a {
+    display: block;
+}
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    display: none;
 }
 
 
