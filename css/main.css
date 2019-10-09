@@ -44,44 +44,111 @@
     width: 100%;
 }
 
+/* Hambuerger Menu*/
 
-/***Header***
-
-header h1 {
-    font-size: 40px;
-    color: white;
-    padding-left: 20px;
-    font-family: 'Balthazar', serif;
-    text-shadow: 2px 2px #fa0075;
-}
-
-nav {
-    position: fixed;
-    text-align: right;
-    margin: 15px 0 0 0;
-    float: right;
-    padding-right: 10px;
-}    
-
-nav ul {
-    width: 950px;
-    margin: 0 auto;
-    padding: 5px 0 0 0px;
-}
-
-nav ul li {
-    font-size: 45px;
-    display: inline-block;
-    padding: 0 20px 0 0px;
-    
-}
-
-nav ul li a {
+header li, a {
+    margin: 75px 0 -55px 0;
+    color: #fa0075;
+    font: 14pt "Roboto", sans-serif;
+    font-weight: 700;
+    line-height: 1.8;
     text-decoration: none;
-    color: white;
-    text-shadow: 2px 2px #fa0075;
-    font-family: 'Balthazar', serif;
-    font-weight: bold;
+    text-transform: none;
+    list-style: none;
+    outline: 0;
+    display: none;
+}
+header li {
+    width: 230px;
+    text-indent: 56px;
+}
+header a:focus {
+    display: block;
+    color: #333;
+    background-color: #eee;
+    transition: all .5s;
+}
+header h1 {
+    line-height: 0;
+    font-size: 4vw;
+    font-weight: 700;
+}
+header h3 {
+    float: right;
+    line-height: .3;
+    font-size: 2.5vw;
+    font-weight: lighter;
+}
+header h4 {
+    float: left;
+    margin-left: -2%;
+    font-size: 1.5vw;
+    font-weight: lighter;
+}
+
+#trigger, #burger, #burger:before, #burger:after {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background: #fa0075;
+    width: 30px;
+    height: 5px;
+    transition: .2s ease;
+    cursor: pointer;
+    z-index: 1;
+}
+#trigger {
+    height: 25px;
+    background: none;
+}
+#burger:before {
+    content: " ";
+    top: 10px;
+    left: 0;
+}
+#burger:after {
+    content: " ";
+    top: 20px;
+    left: 0;
+}
+#menu-toggle:checked + #trigger + #burger {
+    top: 35px;
+    transform: rotate(180deg);
+    transition: transform .2s ease;
+}
+
+#menu-toggle:checked + #trigger + #burger:before {
+    width: 20px;
+    top: -2px;
+    left: 18px;
+    transform: rotate(45deg) translateX(-5px);
+    transition: transform .2s ease;
+}
+#menu-toggle:checked + #trigger + #burger:after {
+    width: 20px;
+    top: 2px;
+    left: 18px;
+    transform: rotate(-45deg) translateX(-5px);
+    transition: transform .2s ease;
+}
+#menu {
+    position: absolute;
+    margin: 0; padding: 0;
+    width: 110px;
+    height: 110px;
+    border-bottom-right-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    animation: not-checked-anim .2s both;
+    transition: .2s;
+}
+#menu-toggle:checked + #trigger + #burger + #menu {
+    animation: checked-anim 1s ease both;
+}
+#menu-toggle:checked + #trigger ~ #menu > li, a {
+    display: block;
+}
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    display: none;
 }
 
 /***Laptop Pic***/
@@ -240,6 +307,10 @@ nav ul li a {
 #contact ul li {
      display: inline-block;
 }
+
+#contact li, a {
+    margin: 0 auto;
+}
 #contact ul img {
     font-size: 32px;
     padding-left: 105px;
@@ -293,112 +364,5 @@ footer ul a {
     color: #fa0075;
     text-decoration: none;
 }
-
-/* Hambuerger Menu*/
-
-li, a {
-    margin: 75px 0 -55px 0;
-    color: #fa0075;
-    font: 14pt "Roboto", sans-serif;
-    font-weight: 700;
-    line-height: 1.8;
-    text-decoration: none;
-    text-transform: none;
-    list-style: none;
-    outline: 0;
-    display: none;
-}
-li {
-    width: 230px;
-    text-indent: 56px;}
-a:focus {
-    display: block;
-    color: #333;
-    background-color: #eee;
-    transition: all .5s;
-}
-h1 {
-    line-height: 0;
-    font-size: 4vw;
-    font-weight: 700;
-}
-h3 {
-    float: right;
-    line-height: .3;
-    font-size: 2.5vw;
-    font-weight: lighter;
-}
-h4 {
-    float: left;
-    margin-left: -2%;
-    font-size: 1.5vw;
-    font-weight: lighter;
-}
-
-#trigger, #burger, #burger:before, #burger:after {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    background: #fa0075;
-    width: 30px;
-    height: 5px;
-    transition: .2s ease;
-    cursor: pointer;
-    z-index: 1;
-}
-#trigger {
-    height: 25px;
-    background: none;
-}
-#burger:before {
-    content: " ";
-    top: 10px;
-    left: 0;
-}
-#burger:after {
-    content: " ";
-    top: 20px;
-    left: 0;
-}
-#menu-toggle:checked + #trigger + #burger {
-    top: 35px;
-    transform: rotate(180deg);
-    transition: transform .2s ease;
-}
-
-#menu-toggle:checked + #trigger + #burger:before {
-    width: 20px;
-    top: -2px;
-    left: 18px;
-    transform: rotate(45deg) translateX(-5px);
-    transition: transform .2s ease;
-}
-#menu-toggle:checked + #trigger + #burger:after {
-    width: 20px;
-    top: 2px;
-    left: 18px;
-    transform: rotate(-45deg) translateX(-5px);
-    transition: transform .2s ease;
-}
-#menu {
-    position: absolute;
-    margin: 0; padding: 0;
-    width: 110px;
-    height: 110px;
-    border-bottom-right-radius: 100%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-    animation: not-checked-anim .2s both;
-    transition: .2s;
-}
-#menu-toggle:checked + #trigger + #burger + #menu {
-    animation: checked-anim 1s ease both;
-}
-#menu-toggle:checked + #trigger ~ #menu > li, a {
-    display: block;
-}
-[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
-    display: none;
-}
-
 
 
